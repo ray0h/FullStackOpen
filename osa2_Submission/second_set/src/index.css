@@ -1,0 +1,57 @@
+
+h2 {
+  margin: 10px;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+p {
+  text-align: left;
+  margin: 0 5px;
+}
+
+button {
+  color: #fff;
+  background-color: rgb(110, 42, 165);
+}
+
+input {
+  width: 100%;
+}
+
+.mainCont {
+  display: flex;
+  justify-content: center;
+
+}
+
+.secondCont {
+  background-color: gray; 
+  min-width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.decCont {
+  background-color: lightgray;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.entryCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.msgCont {
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(31, 114, 31);
+  border-radius: 5px;
+}
+
+.error {
+  color: red; 
+}
