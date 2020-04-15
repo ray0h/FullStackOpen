@@ -65,11 +65,16 @@ const App = () => {
                     setNewName("")
                     setNewNumber("")
                 })
-                .then( () =>
-                    {setErrorMsg(false)
+                .then( () => {
+                    setErrorMsg(false)
                     setMessage(`${newName} was added to the phonebook.`)
-                    setTimeout( () => {setMessage("")}, 4000)}
-                )
+                    setTimeout( () => {setMessage("")}, 4000)
+                })
+                .catch(error => {
+                    setMessage(error.response.data.error) // this is the string
+                    setErrorMsg(true)
+                    setTimeout( () => {setMessage("")}, 4000)
+                })
         } else if (currentNames.includes(newName) && !currentNums.includes(newNumber)) {
             let id = persons.find(each => (each.name === newName)).id
             let updateNum = window.confirm(`Update ${newName}'s number?`)
