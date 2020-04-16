@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Furiously fast cars",
+    "author": "I Am Groot",
+    "url": "www.FFC7.com",
+    "likes": 25000
+}
