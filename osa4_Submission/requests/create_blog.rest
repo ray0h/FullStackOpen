@@ -1,9 +1,11 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJGbGFpciIsImlkIjoiNWU5ZjZkMDljOGI4OGQzNzIwNmQ2ZWJhIiwiaWF0IjoxNTg3NTE5MTU5fQ.BQ1H2Oe5bGFvejxZBtYq_z6_Ou2FVR3aiLxEBD6UdJM
 
 {
-    "title": "Furiously fast cars",
-    "author": "I Am Groot",
-    "url": "www.FFC7.com",
-    "likes": 25000
+    "title": "WWE Get the F Out",
+    "author": "Vince McMahon",
+    "url": "www.wwe.com/blogs",
+    "likes": 751731,
+    "userId": "5e9f6d09c8b88d37206d6eba"
 }

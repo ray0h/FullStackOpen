@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/5e9dcf2c3612e8141f4fee62
+Content-Type: application/json 
+
+{
+    "title": "Furiously fast cars",
+    "author": "I Am Groot",
+    "url": "www.FFC9.com",
+    "likes": 25632
+}
