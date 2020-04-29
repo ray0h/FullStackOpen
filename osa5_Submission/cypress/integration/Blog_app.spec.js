@@ -112,22 +112,22 @@ describe('Blog app', function () {
         it('it lists in the order of most to least likes', function () {
             cy.login({ username: 'AGiant', password: 'andrethegiant' })
             cy.createBlog({
-                title: 'blog1',
+                title: 'blog7',
                 author: 'Andre D Giant',
                 url: 'http://www.andre1.io',
-                likes: 1
+                likes: 7
             })
             cy.createBlog({
-                title: 'blog100',
+                title: 'blog113',
                 author: 'Andre D Giant',
                 url: 'http://www.andre2.io',
-                likes: 100
+                likes: 113
             })
             cy.createBlog({
-                title: 'blog10000',
+                title: 'blog21738',
                 author: 'Andre D Giant',
                 url: 'http://www.andre3.io',
-                likes: 10000
+                likes: 21738
             })
             cy.get('.blogLikes').invoke('text').then(($each) => {
                 let likeArr = $each
