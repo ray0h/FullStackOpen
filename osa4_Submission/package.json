@@ -6,7 +6,8 @@
   "scripts": {
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
-    "test": "NODE_ENV=test jest --verbose --runInBand"
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "start:test": "NODE_ENV=test node index.js"
   },
   "author": "Ray Oh",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "mongoose": "^5.9.9",
     "mongoose-unique-validator": "^2.0.3"
   },
+  "proxy": "http://localhost:3000",
   "devDependencies": {
     "jest": "^25.4.0",
     "nodemon": "^2.0.3",
