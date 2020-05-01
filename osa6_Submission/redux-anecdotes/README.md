@@ -1,7 +1,5 @@
 # FullStackOpen Part 6 Exercise Solutions
 
-[FullStackOpen Ex. 6.1-6.2](https://fullstackopen.com/osa6/flux_arkkitehtuuri_ja_redux#tehtavat-6-1-6-2)
-
 [FullStackOpen Ex. 6.3-6.8](https://fullstackopen.com/osa6/flux_arkkitehtuuri_ja_redux#tehtavat-6-3-6-8)
 
 [FullStackOpen Ex. 6.9-6.12](https://fullstackopen.com/osa6/monta_reduseria#tehtavat-6-9-6-12)
