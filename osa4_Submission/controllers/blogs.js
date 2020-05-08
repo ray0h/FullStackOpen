@@ -9,12 +9,37 @@ blogsRouter.get('/', async (request, response) => {
 })
 
 blogsRouter.get('/:id', async (request, response) => {
-    const blog = await Blog.findById(request.params.id)
+    const blog = await Blog.findById(request.params.id).populate('user', { username: 1, name: 1 });
     if (blog) {
         response.json(blog.toJSON());
     } else {
         response.status(404).end();
     }
+})
+
+blogsRouter.get('/:id/comments', async (request, response) => {
+    const blog = await Blog.findById(request.params.id)
+    if (blog) {
+        const comments = blog.comments;
+        response.json(comments);
+    } else {
+        response.status(404).end();
+    }
+})
+
+blogsRouter.post('/:id/comments', async (request, response) => {
+    const body = request.body
+    const commentedBlog = {
+        title: body.title,
+        author: body.author,
+        url: body.url,
+        likes: body.likes,
+        user: body.user[0].id,
+        comments: body.comments
+    }
+
+    const updatedBlog = await Blog.findByIdAndUpdate(request.params.id, commentedBlog, { new: true })
+    response.json(updatedBlog.toJSON())
 })
 
 blogsRouter.post('/', async (request, response) => {
