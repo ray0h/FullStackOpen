@@ -1,0 +1,23 @@
+{
+  "name": "graphql-exercise",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Raymond Oh",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.13.0",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.13",
+    "mongoose-unique-validator": "^2.0.3",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
