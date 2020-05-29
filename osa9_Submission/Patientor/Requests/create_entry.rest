@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/patients/d27736ec-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "id": "b4f4eca1-2aa7-4b13-9a18-4a5535c3c8qc",
+  "date": "2020-05-27",
+  "specialist": "MD McCoy",
+  "type": "HealthCheck",
+  "description": "Yearly control visit.  Order for colonoscopy, bloodwork looked good.",
+  "healthCheckRating": 1
+}
