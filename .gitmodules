@@ -1,3 +1,9 @@
 [submodule "osa3_Submission/phonebook_backend"]
 	path = osa3_Submission/phonebook_backend
 	url = https://github.com/ray0h/FullStackOpen
+[submodule "osa9_Submission/FullStackOpen"]
+	path = osa9_Submission/FullStackOpen
+	url = git@github.com:ray0h/FullStackOpen.git
+[submodule "osa9_Submission/patientor"]
+	path = osa9_Submission/patientor
+	url = git@github.com:ray0h/patientor.git
